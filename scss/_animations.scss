@@ -1,0 +1,33 @@
+@keyframes aparecer{
+    from{
+        opacity: 0.3;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes to-top{
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromleft-toright{
+    0%{
+        transform: translateX(-10px);
+    }
+
+    50%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        transform: translateX(-10px);
+    }
+}

@@ -1,0 +1,11 @@
+@mixin background($pos, $size, $attach){
+    background-position: $pos;
+    background-size: $size;
+    background-attachment: $attach;
+};
+
+@mixin flex($dir, $align, $justify){
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $justify;
+}

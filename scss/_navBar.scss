@@ -1,0 +1,45 @@
+.navbar{
+    background-color: map-get($map: $paleta, $key: 'color2');
+    box-shadow: 0 2px 5px gray;
+
+    font-family: $secondFont;
+
+    .navbar__logo{
+        max-height: 30px;
+
+        transition: all 300ms;
+
+        &:hover{
+            transform: scale(0.9);
+        }
+
+        @media (min-width: 320px){
+            max-height: 40px;
+        }
+    }
+
+    .navbar-toggler{
+        border: none;
+
+        &:focus{
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon{
+            background-image: url(../img/Iconos/menu.svg);
+
+            width: 35px;
+        }
+    }
+
+    .nav-link{
+        font-weight: 600;
+        color: map-get($map: $paleta, $key: 'keyColor');
+
+        &:hover{
+            color: map-get($map: $paleta, $key: 'color3');
+        }
+    }
+
+}
+

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap");
+.bg-dwhite {
+  background-color: #dff2ff; }
+
+.bg-color1 {
+  background-color: #83afd1; }
+
+.bg-color2 {
+  background-color: #b8d1e5; }
+
+.border-color3 {
+  border: 1px solid #4f8dbe; }
+
+.negro {
+  color: #091014; }
+
+.key-color {
+  color: #1f384c; }
+
+.btn-color2 {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #b8d1e5;
+  border: none;
+  text-decoration: none;
+  color: #1f384c;
+  transition: all 300ms; }
+  .btn-color2:hover {
+    background-color: #4f8dbe;
+    color: #dff2ff; }
+
+.underline {
+  width: 100px;
+  margin-bottom: 2.5rem;
+  border-top: 2px solid #4f8dbe;
+  animation-name: fromleft-toright;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite; }
+
+.main {
+  margin-top: 57.84px;
+  padding: 80px 0;
+  font-family: "Poppins"; }
+  @media (min-width: 320px) {
+    .main {
+      margin-top: 66px; } }
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #091014; }
+
+.aparecer {
+  animation-name: aparecer;
+  animation-duration: 800ms;
+  animation-iteration-count: initial; }
+
+.to-top {
+  animation-name: to-top;
+  animation-duration: 1000ms;
+  animation-iteration-count: initial; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0.3; }
+  to {
+    opacity: 1; } }
+
+@keyframes to-top {
+  from {
+    transform: translateY(300px); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes fromleft-toright {
+  0% {
+    transform: translateX(-10px); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(-10px); } }
+
+.navbar {
+  background-color: #b8d1e5;
+  box-shadow: 0 2px 5px gray;
+  font-family: "Montserrat"; }
+  .navbar .navbar__logo {
+    max-height: 30px;
+    transition: all 300ms; }
+    .navbar .navbar__logo:hover {
+      transform: scale(0.9); }
+    @media (min-width: 320px) {
+      .navbar .navbar__logo {
+        max-height: 40px; } }
+  .navbar .navbar-toggler {
+    border: none; }
+    .navbar .navbar-toggler:focus {
+      box-shadow: none; }
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url(../img/Iconos/menu.svg);
+      width: 35px; }
+  .navbar .nav-link {
+    font-weight: 600;
+    color: #1f384c; }
+    .navbar .nav-link:hover {
+      color: #4f8dbe; }
+
+/* INICIO ESTILOS INDEX */
+.header {
+  height: calc(100vh - 57.84px);
+  margin-top: 57.84px;
+  background: linear-gradient(-30deg, #539bca33, #96d1fbcc), url(../img/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins";
+  color: #1f384c; }
+  @media (min-width: 320px) {
+    .header {
+      height: calc(100vh - 66px);
+      margin-top: 66px; } }
+  @media (min-width: 1024px) {
+    .header .header__title {
+      font-size: 3rem; } }
+
+.summary {
+  margin: 0; }
+  @media (min-width: 992px) {
+    .summary .intro__aside {
+      width: 170px;
+      position: absolute;
+      left: -150px;
+      box-shadow: 5px 5px 10px #1f384c;
+      text-align: start;
+      transition: all 500ms;
+      cursor: pointer; } }
+  .summary .intro__aside:hover {
+    left: 0; }
+  .summary .intro__aside:active {
+    left: 0; }
+  .summary .intro__link:hover {
+    color: #4f8dbe; }
+  .summary .intro__figure {
+    max-width: 300px; }
+
+/* FIN ESTILOS INDEX */
+.news-carrusel__img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center; }
+  @media (min-width: 768px) {
+    .news-carrusel__img {
+      height: 400px; } }
+
+/* INICIO ESTILOS DOCENTES */
+.docentes__img {
+  width: 150px;
+  border-radius: 50%; }
+  @media (min-width: 320px) {
+    .docentes__img {
+      width: 170px; } }
+
+.files {
+  padding-top: 60px; }
+
+/* FIN ESTILOS ARCHIVO DOCENTES */
+/* INICIA ESTILOS ARCHIVO ALUMNOS */
+p {
+  margin: 0; }
+
+.students__img {
+  height: 100%; }
+
+.future__link {
+  height: 120px;
+  width: 120px;
+  cursor: pointer; }
+  .future__link:hover .future__img {
+    transform: scale(0.9); }
+  .future__link .future__img {
+    transition: all 300ms; }
+
+/* FIN ESTILOS ARCHIVO ALUMNOS */
+/* INICIO ESTILOS INSTITUCIONAL */
+.history .history__figure {
+  max-width: 500px; }
+
+.history .history__text {
+  position: relative;
+  bottom: 30px; }
+  @media (min-width: 1200px) {
+    .history .history__text {
+      left: -70px;
+      bottom: 5px; } }
+
+.gallery .gallery__muestras {
+  position: relative; }
+  .gallery .gallery__muestras .gallery__info {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 35%; }
+
+.gallery .gallery__grid {
+  display: grid;
+  gap: 10px; }
+  .gallery .gallery__grid .gallery__box {
+    overflow: hidden; }
+    .gallery .gallery__grid .gallery__box .gallery__img {
+      transition: all 300ms; }
+      .gallery .gallery__grid .gallery__box .gallery__img:hover {
+        transform: scale(1.1); }
+  @media (min-width: 768px) {
+    .gallery .gallery__grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img5"; }
+      .gallery .gallery__grid .gallery__box {
+        cursor: pointer; }
+      .gallery .gallery__grid .gallery__box--1 {
+        grid-area: img1; }
+      .gallery .gallery__grid .gallery__box--2 {
+        grid-area: img2; }
+      .gallery .gallery__grid .gallery__box--3 {
+        grid-area: img3; }
+      .gallery .gallery__grid .gallery__box--4 {
+        grid-area: img4; }
+      .gallery .gallery__grid .gallery__box--5 {
+        grid-area: img5; } }
+
+/* FIN ESTILOS INSTITUCIONAL */
+.footer {
+  background-color: #83afd1;
+  font-family: "Montserrat"; }
+  .footer .footer__container {
+    padding: 3rem 0; }
+    .footer .footer__container .footer__col {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+    .footer .footer__container .footer__guide {
+      height: 200px; }
+      @media (min-width: 768px) {
+        .footer .footer__container .footer__guide {
+          height: 300px; } }
+    .footer .footer__container .contact__row {
+      margin-bottom: 1rem; }
+      .footer .footer__container .contact__row .contact__icon {
+        height: 25px;
+        width: 25px;
+        margin: 0 auto;
+        display: block;
+        transition: all 1500ms; }
+        .footer .footer__container .contact__row .contact__icon:hover {
+          transform: rotate(360deg); }
+        @media (min-width: 320px) {
+          .footer .footer__container .contact__row .contact__icon {
+            height: 30px;
+            width: 30px;
+            display: inline; } }
+      @media (min-width: 768px) {
+        .footer .footer__container .contact__row .contact__span {
+          margin: 0 1rem; } }
+  .footer .social {
+    background-color: #b8d1e5; }
+    .footer .social .social__container {
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .footer .social .social__container {
+          flex-direction: row;
+          justify-content: space-around; } }
+    .footer .social .social__title {
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #1f384c; }
+      @media (min-width: 768px) {
+        .footer .social .social__title {
+          margin-bottom: 0; } }
+    .footer .social .social__link {
+      display: inline-block;
+      margin: 0 1rem; }
+      .footer .social .social__link .social__icon {
+        width: 35px;
+        transition: all 300ms; }
+        .footer .social .social__link .social__icon:hover {
+          transform: scale(1.2); }

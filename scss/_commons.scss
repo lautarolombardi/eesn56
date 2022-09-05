@@ -1,0 +1,118 @@
+.bg-dwhite{
+    background-color: map-get($map: $paleta, $key: 'blanco');
+}
+
+.bg-color1{
+    background-color: map-get($map: $paleta, $key: 'color1');
+}
+
+.bg-color2{
+    background-color: map-get($map: $paleta, $key: 'color2');
+}
+
+.border-color3{
+    border: 1px solid map-get($map: $paleta, $key: 'color3');
+}
+
+
+
+
+
+
+
+
+.negro{
+    color: map-get($map: $paleta, $key: 'negro');
+}
+
+.key-color{
+    color: map-get($map: $paleta, $key: 'keyColor');
+}
+
+
+
+
+
+
+
+.btn-color2{
+    display: inline-block;
+
+    padding: 8px;
+    border-radius: 10px;
+
+    background-color: map-get($map: $paleta, $key: 'color2');
+    border: none;
+
+    text-decoration: none;
+    color: map-get($map: $paleta, $key: 'keyColor');
+
+    transition: all 300ms;
+
+    &:hover{
+        background-color: map-get($map: $paleta, $key: 'color3');
+        color: map-get($map: $paleta, $key: 'blanco');
+    }
+}
+
+.underline{
+    width: 100px;
+
+    margin-bottom: 2.5rem;
+
+    border-top: 2px solid map-get($map: $paleta, $key: 'color3');
+
+    animation-name: fromleft-toright;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+.main{
+    margin-top: 57.84px;
+    padding: $main-padding;
+
+    font-family: $mainFont;
+
+    @media (min-width: 320px){
+        margin-top: 66px;
+    }
+}
+
+.title{
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+    color: map-get($map: $paleta, $key: 'negro');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.aparecer{
+    animation-name: aparecer;
+    animation-duration: 800ms;
+    animation-iteration-count: initial;
+}
+
+.to-top{
+    animation-name: to-top;
+    animation-duration: 1000ms;
+    animation-iteration-count: initial;
+}

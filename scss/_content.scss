@@ -1,0 +1,256 @@
+/* INICIO ESTILOS INDEX */
+
+.header{
+    height: calc(100vh - 57.84px);
+
+    margin-top: 57.84px;
+
+    background: linear-gradient(-30deg, #539bca33, #96d1fbcc), url(../img/banner.png);
+    @include background(center, cover, fixed);
+
+    font-family: $mainFont;
+    color: map-get($map: $paleta, $key: 'keyColor');
+
+    @media (min-width: 320px){
+        height: calc(100vh - 66px);
+
+        margin-top: 66px;
+    }
+
+    .header__title{
+        @media (min-width: 768px){
+            font-size: map-get($map: $font-sizes, $key: 'fontlg');
+        }
+
+        @media (min-width: 1024px){
+            font-size: map-get($map: $font-sizes, $key: 'fontxl');
+        }
+    }
+}
+
+.summary{
+    margin: 0;
+
+    .intro__aside{
+        @media (min-width: 992px){
+            width: 170px;
+
+            position: absolute;
+            left: -150px;
+
+            box-shadow: 5px 5px 10px map-get($map: $paleta, $key: 'keyColor');
+
+            text-align: start;
+        
+            transition: all 500ms;
+            cursor: pointer;
+        }
+
+        &:hover{
+            left: 0;
+        }
+        &:active{
+            left: 0;
+        }
+    }
+
+    .intro__link{
+        &:hover{
+            color: map-get($map: $paleta, $key: 'color3');
+        }
+    }
+
+    .intro__figure{
+        max-width: 300px;
+    }
+}
+
+/* FIN ESTILOS INDEX */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//INICIO ESTILOS NOVEDADES
+
+.news-carrusel__img{
+    height: 250px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    @media (min-width: 768px){
+        height: 400px;
+    }
+}
+
+//FIN ESTILOS NOVEDADES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO ESTILOS DOCENTES */
+
+.docentes__img{
+    width: 150px;
+
+    @media (min-width: 320px){
+        width: 170px;
+    }
+
+    border-radius: 50%;
+}
+
+.files{
+    padding-top: 60px;
+}
+
+
+/* FIN ESTILOS ARCHIVO DOCENTES */
+
+
+
+
+
+
+/* INICIA ESTILOS ARCHIVO ALUMNOS */
+p{
+    margin: 0;
+}
+
+.students__img{
+    height: 100%;
+}
+
+.future__link{
+    height: 120px;
+    width: 120px;
+
+    cursor: pointer;
+
+    &:hover .future__img{
+        transform: scale(0.9);
+    }
+
+    .future__img{
+        transition: all 300ms
+    }
+}
+
+/* FIN ESTILOS ARCHIVO ALUMNOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO ESTILOS INSTITUCIONAL */
+
+.history{
+    .history__figure{
+        max-width: 500px;
+    }
+
+    .history__text{
+        position: relative;
+        bottom: 30px;
+
+        @media (min-width: 1200px){
+            left: -70px;
+            bottom: 5px;
+        }
+    }
+}
+
+.gallery{
+    .gallery__muestras{
+        position: relative;
+        
+        .gallery__info{
+            height: 200px;
+            width: 400px;
+
+            position: absolute;
+            top: 40%;
+            left: 35%;
+        }
+    }
+
+    .gallery__grid{
+        display: grid;
+        gap: 10px;
+
+        .gallery__box{
+            overflow: hidden;
+
+            .gallery__img{
+                transition: all 300ms;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        @media (min-width: 768px){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "img1 img1 img2 img3"
+            "img1 img1 img4 img5";
+
+            .gallery__box{
+                cursor: pointer;
+            }
+    
+            .gallery__box--1{
+                grid-area: img1;
+            }
+            .gallery__box--2{
+                grid-area: img2;
+            }
+            .gallery__box--3{
+                grid-area: img3;
+            }
+            .gallery__box--4{
+                grid-area: img4;
+            }
+            .gallery__box--5{
+                grid-area: img5;
+            }
+        }
+    }
+}
+
+/* FIN ESTILOS INSTITUCIONAL */
+
