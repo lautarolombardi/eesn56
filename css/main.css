@@ -145,15 +145,6 @@
     max-width: 300px; }
 
 /* FIN ESTILOS INDEX */
-.news-carrusel__img {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center; }
-  @media (min-width: 768px) {
-    .news-carrusel__img {
-      height: 400px; } }
-
 /* INICIO ESTILOS DOCENTES */
 .docentes__img {
   width: 150px;
