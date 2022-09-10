@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap");
+body {
+  overflow-x: hidden; }
+
 .bg-dwhite {
   background-color: #dff2ff; }
 
@@ -161,8 +164,20 @@
 p {
   margin: 0; }
 
-.students__img {
-  height: 100%; }
+@media (min-width: 768px) {
+  .students__banner {
+    height: 150vh;
+    background-image: url(../img/Alumnos/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center; } }
+
+@media (min-width: 768px) {
+  .students__banner .students__intro {
+    padding: 20px;
+    background-color: #dff2ff; } }
 
 .future__link {
   height: 120px;
@@ -237,6 +252,10 @@ p {
       @media (min-width: 768px) {
         .footer .footer__container .footer__guide {
           height: 300px; } }
+    .footer .footer__container .contact__title {
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #091014; }
     .footer .footer__container .contact__row {
       margin-bottom: 1rem; }
       .footer .footer__container .contact__row .contact__icon {
@@ -252,7 +271,7 @@ p {
             height: 30px;
             width: 30px;
             display: inline; } }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         .footer .footer__container .contact__row .contact__span {
           margin: 0 1rem; } }
   .footer .social {

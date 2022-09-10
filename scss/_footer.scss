@@ -20,6 +20,13 @@
             }
         }
 
+        .contact__title{
+            margin-bottom: 40px;
+
+            font-weight: 700;
+            color: map-get($map: $paleta, $key: 'negro');
+        }
+
         .contact__row{
             margin-bottom: 1rem;
 
@@ -46,7 +53,7 @@
             }
     
             .contact__span{
-                @media (min-width: 768px){
+                @media (min-width: 992px){
                     margin: 0 1rem;
                 }
             }
