@@ -102,6 +102,13 @@ body{
     color: map-get($map: $paleta, $key: 'negro');
 }
 
+.table-bordered{
+    border: 2px solid map-get($map: $paleta, $key: 'color3');
+
+    thead, tbody, thead, tr, td{
+        border: 2px solid map-get($map: $paleta, $key: 'color3');
+    }
+}
 
 
 
